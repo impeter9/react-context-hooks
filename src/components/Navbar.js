@@ -3,7 +3,7 @@ import { ThemeContext } from '../contexts/ThemeContext';
 import { AuthContext } from '../contexts/AuthContext';
 
 class Navbar extends Component {
-  static contextType = ThemeContext;
+  // static contextType = ThemeContext;
 
   render() {
     return (
