@@ -1,6 +1,7 @@
 import React from 'react';
 
 import ThemeContextProvider from './contexts/ThemeContext';
+import AuthContextProvider from './contexts/AuthContext';
 
 import Navbar from './components/Navbar';
 import BookList from './components/BookList';
@@ -10,9 +11,11 @@ function App() {
   return (
     <div className='App'>
       <ThemeContextProvider>
-        <Navbar />
-        <BookList />
-        <ThemeToggle />
+        <AuthContextProvider>
+          <Navbar />
+          <BookList />
+          <ThemeToggle />
+        </AuthContextProvider>
       </ThemeContextProvider>
     </div>
   );
